@@ -1,4 +1,4 @@
-const API_URL = 'http://34.229.59.215:5000'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || ''
 
 export const apiCall = async (endpoint, options = {}) => {
 	const token =
